@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Visit Counts</title>
+    </head>
+    <body>
+        <h1>Visit Counts</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Page            </th>
+                    <th>    Visits</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for page, count in visits.items() %}
+                <tr>
+                    <td>{{ page }}</td>
+                    <td>{{ count }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    </body>
+</html>

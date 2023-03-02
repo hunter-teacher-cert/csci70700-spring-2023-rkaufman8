@@ -1,0 +1,14 @@
+{% extends "basic.html" %}
+
+{% block title %}Home{% endblock %}
+
+{% block content %}
+{% if name %}
+  <h1>Hello {{ name }}!</h1>
+  <h1>{{message}}</h1>
+  <h1>go look at a picture of a fat cat! <a href="/fatPets/fatCat">here</a></h1>
+  <h1>or a fat dog <a href="/fatPets/fatDog">here</a></h1>
+  {% else %}
+  <h1>Hello, World!</h1>
+{% endif %}
+{% endblock %}
