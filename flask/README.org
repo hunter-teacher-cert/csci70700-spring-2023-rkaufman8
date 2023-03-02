@@ -1,9 +1,9 @@
 index.html
 
 routes: 
-/basic.html
-/hi.html
-/login.html
-/pets.html
-/secret.html
-/visits.html
+1. /basic.html
+2. /hi.html
+3. /login.html
+4. /pets.html
+5. /secret.html
+6. /visits.html
