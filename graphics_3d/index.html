@@ -1,0 +1,87 @@
+<html>
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+  </head>
+  <body>
+    <a-scene>
+
+<!-- eyebrow --> 
+<!--used rotation-->  
+<a-cylinder color="#62a4ab" rotation="0 0 90" height="1" radius=".04" position=".1 1.7 -3"></a-cylinder>
+
+<!-- left eye --> 
+<!--used translation-->  
+<a-sphere position="-.2 1.47 -3.1" color="white" radius=".25"> </a-sphere>
+<a-sphere position="-.2 1.47 -2" color="black" radius=".03"> </a-sphere>
+<!-- right eye --> 
+<!--used translation-->  
+<a-sphere position=".3 1.47 -3.1" color="white" radius=".25"> </a-sphere>
+<a-sphere position=".1 1.47 -2" color="black" radius=".03"> </a-sphere>
+
+<!--HAIR left--> 
+<!--used entity + translation-->  
+<a-entity>   
+<a-cylinder position="-.8 1.3 -3.7" radius="0.15" height=".1" color="#62a4ab" segments-radial="3" rotation="65 50 10">"</a-cylinder>
+  
+      <a-cylinder position="-.75 1.6 -3.7" radius="0.3" height=".1" color="#62a4ab" segments-radial="3" rotation="65 50 10">"</a-cylinder>
+
+<a-cylinder position="-.6 1.9 -3.7" radius="0.4" height=".1" color="#62a4ab" segments-radial="3" rotation="80 50 10">"</a-cylinder>
+
+<a-cylinder position="-.1 2.6 -3.8" radius="0.6" height=".1" color="#62a4ab" segments-radial="3" rotation="-80 20 0">"</a-cylinder>
+      
+<a-cylinder position="-.4 2.3 -3.7" radius="0.5" height=".1" color="#62a4ab" segments-radial="3" rotation="100 20 0">"</a-cylinder>
+  
+</a-entity>
+
+
+<!--HAIR right-->
+<!--used entity + scale + translation + reflection-->  
+
+<a-entity scale="-1 1 1" position=".2 0 0" >   
+
+<a-cylinder position="-.8 1.3 -3.7" radius="0.15" height=".1" color="#62a4ab" segments-radial="3" rotation="65 50 10">"</a-cylinder>
+
+      <a-cylinder position="-.75 1.6 -3.7" radius="0.3" height=".1" color="#62a4ab" segments-radial="3" rotation="65 50 10">"</a-cylinder>
+
+<a-cylinder position="-.6 1.9 -3.7" radius="0.4" height=".1" color="#62a4ab" segments-radial="3" rotation="80 50 10">"</a-cylinder>
+    
+<a-cylinder position="-.4 2.3 -3.8" radius="0.6" height=".1" color="#62a4ab" segments-radial="3" rotation="100 20 0">"</a-cylinder>
+
+<a-cylinder position="-.1 2.6 -3.7" radius="0.5" height=".1" color="#62a4ab" segments-radial="3" rotation="-80 20 0">"</a-cylinder>
+  
+</a-entity>
+
+      
+<!--EARS-->
+<!--used translation, scale-->  
+<a-sphere scale=".75 1 1" position=".9 1.2 -3.7" radius=".2" rotation="0 0 0"  color="#d5c8b8"></a-sphere>
+<a-sphere scale=".75 1 1" position="-.7 1.2 -3.7" radius=".2" rotation="0 0 0"  color="#d5c8b8"></a-sphere>  
+      
+<!--HEAD-->      
+<a-sphere scale=".75 1 1" position=".1 1.2 -4.3" radius="1.3" rotation="0 0 0"  color="#d5c8b8"></a-sphere>
+
+<!--MOUTH-->
+<!--used rotation-->  
+<a-box color="black" depth=".02" height=".4" width=".005" position=".03 1.06 -2" rotation="0 0 90"></a-box>
+
+ <!--BROW LINES-->
+<!--used translation-->  
+<a-box color="black" depth=".02" height=".3" width=".003" position=".03 1.75 -2" rotation="0 0 90"></a-box>
+<a-box color="black" depth=".02" height=".2" width=".003" position=".03 1.8 -2" rotation="0 0 90"></a-box>
+      
+<!--DROOL--> 
+<!--used translation, scale, rotation-->  
+<a-sphere scale=".75 1 1" position=".2 .7 -3" radius=".1" rotation="0 0 200"  color="#7BC8A4"></a-sphere>
+<a-sphere scale=".75 1 1" position=".1 .70 -3" radius=".1" rotation="90 0 -90"  color="#7BC8A4"></a-sphere>
+<a-box color="#7BC8A4" depth=".02" height=".2" width=".04" position=".03 1.03 -2" rotation="0 0 90"></a-box>
+<a-box color="#7BC8A4" depth=".02" height=".15" width=".1" position=".05 1. -2" rotation="0 0 90"></a-box>  
+
+
+
+
+      
+      <a-plane position="0 0 -4" rotation="-90 0 0" width="4" height="4" color="#7BC8A4"></a-plane>
+      <a-sky color="#ECECEC"></a-sky>
+    </a-scene>
+  </body>
+</html>

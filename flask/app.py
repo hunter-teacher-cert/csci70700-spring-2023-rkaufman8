@@ -1,6 +1,6 @@
 from flask import Flask, render_template, url_for, request, session, redirect, send_from_directory
-import datetime
-
+# import datetime
+# import flask
 app = Flask(__name__)
 app.secret_key = '??^W.;? '
 
@@ -83,3 +83,6 @@ def visits():
     # Display the visit counts for each page
     visits = session.get('visits', {})
     return render_template('visits.html', visits=visits)
+
+
+app.run(host='0.0.0.0', port=81)

@@ -6,7 +6,7 @@ Every new repl comes with a `.replit` and a `replit.nix` file that let you confi
 
 Every new repl is now a Nix repl, which means you can install any package available on Nix, and support any number of languages in a single repl. You can search for a list of available packages [here](https://search.nixos.org/packages).
 
-The `replit.nix` file should look something like the example below. The `deps` array specifies which Nix packages you would like to be available in your environment. 
+The `replit.nix` file should look -something like the example below. The `deps` array specifies which Nix packages you would like to be available in your environment. 
 
 ```nix
 { pkgs }: {
